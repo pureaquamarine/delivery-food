@@ -1,0 +1,169 @@
+.section-how {
+    margin: 0 auto;
+    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16rem;
+
+    @media (max-width: 56em) {
+        row-gap: 10rem;
+    }
+
+    .how-block {
+        display: flex;
+        justify-content: center;
+        column-gap: 7.7rem;
+
+        @media (max-width: 56em) {
+            flex-direction: column;
+            align-items: center;
+            gap: 5rem;
+        }
+
+        .how {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media (max-width: 56em) {
+                align-items: center;
+            }
+
+            &__subheading {
+                font-size: 1.2rem;
+                line-height: 167%;
+                letter-spacing: 2px;
+                color: #A8A8A8;
+                margin-bottom: 3rem;
+
+                @media (max-width: 36em) {
+                    font-size: 1rem;
+                }
+            }
+
+            &__heading {
+                font-size: 3.8rem;
+                line-height: 126%;
+                margin-bottom: 2.2rem;
+                max-width: 30.4rem;
+
+                @media (max-width: 64em) {
+                    font-size: 3.4rem;
+                }
+                @media (max-width: 56em) {
+                    max-width: 100%;
+                }
+                @media (max-width: 44em) {
+                    font-size: 3rem;
+                    text-align: center;
+                }
+                @media (max-width: 36em) {
+                    font-size: 2.6rem;
+                }
+            }
+
+            &__description {
+                font-size: 1.6rem;
+                line-height: 188%;
+                color: #6B6B6B;
+                max-width: 33rem;
+
+                @media (max-width: 64em) {
+                    font-size: 1.6rem;
+                }
+                @media (max-width: 56em) {
+                    max-width: 80%;
+                }
+                @media (max-width: 44em) {
+                    max-width: 90%;
+                    font-size: 1.4rem;
+                }
+                @media (max-width: 36em) {
+                    max-width: 100%;
+                }
+
+                span {
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .how__img-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }    
+    } 
+
+    .how-block-2 {
+        margin-bottom: 5rem;
+
+        @media (max-width: 64em) {
+            margin-bottom: 3.5rem;
+        }
+        @media (max-width: 56em) {
+            flex-direction: column-reverse;
+        }
+    } 
+
+    .quote {
+        max-width: 70rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        &__symbol {
+            color: #D6D6D6;
+            width: 5.8rem;
+            margin-bottom: 6.6rem;
+
+            @media (max-width: 64em) {
+                width: 4rem;
+                margin-bottom: 3rem;
+            }
+            @media (max-width: 36em) {
+                width: 3rem;
+            }
+        }
+        &__text {
+            max-width: 70rem;
+            font-size: 2.4rem;
+            line-height: 167%;
+            color: #6B6B6B;
+            margin-bottom: 2rem;
+
+            @media (max-width: 64em) {
+                font-size: 2rem;
+            }
+            @media (max-width: 56em) {
+                font-size: 1.8rem;
+            }
+            @media (max-width: 36em) {
+                font-size: 1.4rem;
+                max-width: 100%;
+            }
+        }
+        &__cite {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 188%;
+
+            @media (max-width: 64em) {
+                font-size: 1.2rem;
+            }
+            @media (max-width: 36em) {
+                font-size: 0.8rem;
+            }
+            
+            span {
+                margin-left: 3rem;
+                font-weight: 700;
+            }
+        }
+        
+    }   
+}    

@@ -1,0 +1,113 @@
+.section-features {
+
+    .features-block {
+        display: flex;
+        
+        column-gap: 6rem;
+        justify-content: space-between;
+        margin-top: 16rem;
+        max-width: 125rem;
+        margin: 16rem auto 0 auto;
+
+        @media (max-width: 64em) {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 5rem;
+        }
+        @media (max-width: 44em) {
+            margin-top: 5rem;
+        }
+
+        .features {
+            text-align: center;
+            max-width: 37.1rem;
+
+            &__heading {
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 133%;
+                margin-top: 4rem;
+            }
+            &__description {
+                font-size: 1.6rem;
+                line-height: 188%;
+                color: #6B6B6B;
+                margin-top: 1.7rem;
+            }
+           
+            &__img-1 {
+                width: 7.9rem;
+                height: 3.5rem;
+            }
+            &__img-2 {
+                width: 7.3rem;
+                height: 3.4rem;
+            }
+            &__img-3 {
+                width: 3.9rem;
+                height: 3.5rem;
+            }
+        }
+    }
+
+    .statistics-block {
+        max-width: 110rem;
+        margin: 16.3rem auto 14rem auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 16.3rem;
+        row-gap: 4rem;
+
+        @media (max-width: 84em) {
+            max-width: 100rem;
+            column-gap: 10rem;
+        }
+        @media (max-width: 44em) {
+            max-width: 70rem;
+            column-gap: 5rem;
+            row-gap: 3rem;
+        }
+        @media (max-width: 34em) {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            row-gap: 3rem;
+            margin: 10rem 0 10rem 0;
+        }
+        @media (max-width: 26em) {
+            grid-template-columns: 1fr; 
+        }
+
+        .statistics {
+            text-align: center;
+
+            &__heading {
+                font-size: 5.9rem;
+                line-height: 153%;
+                color: #333;
+                margin-bottom: 1rem;
+
+                @media (max-width: 84em) {
+                    font-size: 4.2rem;
+                }
+                @media (max-width: 44em) {
+                    font-size: 3rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+            &__description {
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 133%;
+
+                @media (max-width: 84em) {
+                    font-size: 1.6rem;
+                }
+                @media (max-width: 44em) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
